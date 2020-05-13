@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  docker-test:
+    image: stefandesu/docker-test
+    ports:
+      - 8091:8091
