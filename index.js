@@ -7,7 +7,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World 1.0.4');
+  res.send('Hello World Version ' + require("./package.json").version);
 });
 
 app.listen(PORT, HOST);
