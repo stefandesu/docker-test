@@ -2,6 +2,11 @@ version: "3"
 
 services:
   docker-test:
-    image: stefandesu/docker-test
+    image: stefandesu/docker-test:1
     ports:
       - 8091:8091
+
+  docker-test-2:
+    image: stefandesu/docker-test:latest
+    ports:
+      - 8092:8091
