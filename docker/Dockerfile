@@ -11,4 +11,6 @@ COPY . .
 
 EXPOSE 8091
 
-CMD [ "npm", "run", "start" ]
+# Use pm2 to run app
+RUN npm install pm2 -g
+CMD [ "pm2-runtime", "index.js" ]
