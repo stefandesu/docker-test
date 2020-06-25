@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     console.log("blubb...")
     process.exit(1)
   }, 2000)
-  res.send('Hello World dev. Version ' + require("./package.json").version);
+  res.send('Hello World Version ' + require("./package.json").version);
 });
 
 app.listen(PORT, HOST);
