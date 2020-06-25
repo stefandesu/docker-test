@@ -13,4 +13,8 @@ EXPOSE 8091
 
 # Use pm2 to run app
 RUN npm install pm2 -g
-CMD [ "pm2-runtime", "index.js" ]
+
+COPY docker/docker-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+CMD ["%%CMD%%"]
